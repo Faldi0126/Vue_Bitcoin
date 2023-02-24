@@ -13,6 +13,8 @@ export default {
 
 
 <template>
-  <Navbar />
-  <RouterView />
+  <div>
+    <Navbar />
+    <RouterView />
+  </div>
 </template>
