@@ -1,6 +1,5 @@
 <script>
 import axios from 'axios'
-import { RouterLink, RouterView } from 'vue-router';
 
 export default {
   name: 'Home',
@@ -16,7 +15,6 @@ export default {
     async getData() {
       try {
         let { data } = await axios.get('https://blockchain.info/ticker')
-        console.log(data);
         this.price = data
       } catch (error) {
         console.log(error);
